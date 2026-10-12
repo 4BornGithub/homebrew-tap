@@ -5,22 +5,22 @@
 class Assumer < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://assumer.in"
-  version "1.1.6"
+  version "1.1.7"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/4BornGithub/assumer-releases/releases/download/v1.1.6/assumer-darwin-x64.zip"
-      sha256 "7d8534a3494d0d979910925f86862d70cda08a781a839e26642e4184159c0542"
+      url "https://github.com/4BornGithub/assumer-releases/releases/download/v1.1.7/assumer-darwin-x64.zip"
+      sha256 "baff59d0b71d61711871ff4dd65697659e917eab604f9aeb871841bce35b19cc"
 
       def install
         bin.install "assumer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/4BornGithub/assumer-releases/releases/download/v1.1.6/assumer-darwin-arm64.zip"
-      sha256 "e2a30bd0f557361df942abc8df31ddf116697b077988073a8e3b6984788495b7"
+      url "https://github.com/4BornGithub/assumer-releases/releases/download/v1.1.7/assumer-darwin-arm64.zip"
+      sha256 "272530557602124f014bb1d797f8be554de7f73c12b541ac320fde038c0f348c"
 
       def install
         bin.install "assumer"
@@ -30,15 +30,15 @@ class Assumer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/4BornGithub/assumer-releases/releases/download/v1.1.6/assumer-linux-x64.tar.gz"
-      sha256 "a0d1081b01f43eca0dc9fefa6648c2718c99d20f3bfc8b38245cd77cba816acc"
+      url "https://github.com/4BornGithub/assumer-releases/releases/download/v1.1.7/assumer-linux-x64.tar.gz"
+      sha256 "b99612a280a0cf8ce2d707a318a6c8eb95a98c4d11a93e7c9badb964c2a56bd2"
       def install
         bin.install "assumer"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/4BornGithub/assumer-releases/releases/download/v1.1.6/assumer-linux-arm64.tar.gz"
-      sha256 "7a5354c2eb37b6f75fed949ec9b49f674b8471d99682b04126e7d9b76a50eb65"
+      url "https://github.com/4BornGithub/assumer-releases/releases/download/v1.1.7/assumer-linux-arm64.tar.gz"
+      sha256 "bb509a622ea22e874a04b0e1b464ed390cc57359d6dc8668c7f34a90053ef3aa"
       def install
         bin.install "assumer"
       end
